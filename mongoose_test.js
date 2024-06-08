@@ -163,28 +163,20 @@ const e2g = async () => {
   }
 }
 
-// f. Now try inserting a movie with the year: "whatever", with {your_name} as the Director. Did that work? Take a screenshot of the error.
+console.log(`All movies after year 2000 ----->`);
+console.log( await e2a());
 
-// g. Now change the year schema from { type: Number } => year: { type: String }. Add the year: "whatever" movie again. Keeping the year: {type: String} schema above, write a query to get all movies where {your_name} is the Director. What happened to the original movie that was in year: 2000? Take a screenshot
+console.log(`All distinct languages in all movies ----->`);
+console.log(await e2b());
 
-// Note: you do not need to write a new function for e2f. Use the same insertion code as in e2e.
+console.log(`All distinct languages in all movies ----->`);
+console.log(await e2c());
 
-// h. Before you submit, make sure to revert the schema back so that the year is a Date.
+console.log(`Number of movies per gerne ----->`);
+console.log(await e2d());
 
-// console.log(`All movies after year 2000 ----->`);
-// console.log( await e2a());
-
-// console.log(`All distinct languages in all movies ----->`);
-// console.log(await e2b());
-
-// console.log(`All distinct languages in all movies ----->`);
-// console.log(await e2c());
-
-// console.log(`Number of movies per gerne ----->`);
-// console.log(await e2d());
-
-// console.log(`Insert a movie with CPSC2650 as title and director as myself (Ting Hin Cheung) ----->`);
-// console.log(await e2e());
+console.log(`Insert a movie with CPSC2650 as title and director as myself (Ting Hin Cheung) ----->`);
+console.log(await e2e());
 
 // console.log(`Insert a movie with CPSC2650 as title and director as myself (Ting Hin Cheung) with 'whatever' in year ----->`);
 // console.log(await e2f());
